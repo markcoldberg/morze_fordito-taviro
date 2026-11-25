@@ -95,7 +95,7 @@ class MorzeAlkalmazas:
         gomb_keret2 = tk.Frame(bal_keret)
         gomb_keret2.pack(pady=5)
 
-        tk.Button(gomb_keret2, text="Betűköz ( )", command=self.betukoz_hozzaad, width=14).pack(side=tk.LEFT, padx=3)
+        tk.Button(gomb_keret2, text="Betűköz (SPACE)", command=self.betukoz_hozzaad, width=14).pack(side=tk.LEFT, padx=3)
         tk.Button(gomb_keret2, text="Szóköz ( / )", command=self.szokoz_hozzaad, width=14).pack(side=tk.LEFT, padx=3)
         tk.Button(gomb_keret2, text="Dekódolás", command=self.fordit_szovegre, width=14).pack(side=tk.LEFT, padx=3)
 
@@ -120,7 +120,7 @@ class MorzeAlkalmazas:
 
         tk.Label(
             jobb_keret,
-            text="Szóköz elválasztó: /",
+            text="Szavak közti elválasztó: /",
             font=("Arial", 9, "italic"),
             pady=8
         ).pack(side=tk.BOTTOM)
